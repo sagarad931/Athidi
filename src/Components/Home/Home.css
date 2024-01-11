@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: #2781ff;
+  --primaryColorLight: #00aeef;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /*Font and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.Home {
+  /* position: relative; */
+  height: 90vh;
+  width: 100%;
+  top: 0;
+}
+.Home .bannerBg {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+}
+.Home .bannerBg img {
+  height: 100vh;
+  /* width: 100vw; */
+  /* -o-object-fit: cover; */
+  object-fit: cover;
+}
+@media screen and (max-width: 676px) {
+ 
+  .Home .bannerBg img {
+    height: 50vh;
+  }
+  .hotel_location .myflex{
+    flex-direction: column;
+    gap: 1px;
+  }
+  .Home {
+    height: 45vh;
+  }
+}
+
+
+.Home .sectionText {
+  position: absolute;
+  display: flex;
+  height: 30%;
+  top: 50%;
+  bottom: 50%;
+  color: var(--whiteColor);
+  padding: 0 1.3rem;
+}
+.Home .sectionText h1 {
+  font-size: var(--biggestFontSize);
+  font-weight: 900;
+}
+.Home .sectionText h1 span {
+  color: #0053cf;
+}
+.Home .sectionText p {
+  padding: 1rem 0;
+  font-size: var(--normalFontSize);
+  font-weight: 500;
+}
+.Home .sectionText p span {
+  color: #0053cf;
+}
+.Home .sectionText .btn {
+  gap: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: var(--h3FontSize);
+}
+.Home .popularPlaces {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .Home .sectionText {
+    padding: 0 2 rem;
+    justify-content: center;
+    /* text-align: center; */
+    width: 100%;
+  }
+  .Home .sectionText h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+  }
+  .Home .sectionText p {
+    padding: 1rem 0;
+    font-size: var(--h2FontSize);
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText .btn {
+    font-size: var(--h2FontSize);
+    /* margin: auto; */
+  }
+}
+@media screen and (min-width: 769px) {
+  .Home .sectionText {
+    width: 100%;
+  }
+  .Home .sectionText h1 {
+    font-size: 4rem;
+    max-width: 100%;
+    margin: auto;
+  }
+  .Home .sectionText p {
+    padding: 1rem 0;
+    font-size: var(--h2FontSize);
+    font-weight: 700;
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText .btn {
+    gap: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: var(--h3FontSize);
+    /* margin: auto; */
+  }
+}
+@media screen and (min-width: 1040px) {
+  .Home {
+    position: relative;
+  }
+  .Home .sectionText h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .popularPlaces {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Home .popularPlaces .content h3 {
+    color: var(--whiteColor);
+    padding: 1rem 0;
+    position: relative;
+  }
+  .Home .popularPlaces .content h3::after {
+    content: "";
+    width: 83%;
+    height: 2px;
+    background: rgb(202, 202, 202);
+    right: 0;
+    bottom: 50%;
+    position: absolute;
+  }
+  .Home .popularPlaces .content .images {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .Home .popularPlaces .content .images img {
+    height: 110px;
+    width: 220px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+} /*# sourceMappingURL=Home.css.map */
+
+/* @media screen and (max-width: 769px) {
+  
+  .Home .bannerBg img {
+    height: 50vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+} */
+
+.myselect {
+  border: none;
+  /* height: 50px; */
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.hotel_location {
+  background-color: rgba(60, 161, 255, 0.397); /* Light black color */
+  padding: 20px; /* Add padding as needed */
+  width: 70%;
+  /* flex-direction: row; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionText{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 986px) {
+  .hotel_location {
+    width: 60vw;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 678px) {
+  .hotel_location {
+    width: 50vw;
+    height: 25vh;
+  }
+
+}
+@media screen and (max-width: 450px) {
+  .hotel_location {
+    width: 80vw;
+    height: 34vh;
+  }
+}
+.hotel_location .myflex {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.book_btn {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+/* Additional styling for labels and inputs */
+.label {
+  /* display: block; */
+  margin-bottom: 20px;
+  font-size: medium;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the dropdown input */
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: medium;
+  /* font-family: sans-serif; */
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1300px) {
+  .input,
+  .select {
+    width: 25rem;
+   
+  }
+}

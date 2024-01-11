@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+root {
+  --primaryColor:#2781ff;
+  --primaryColorLight:#00aeef;
+  --bgColor:hsl(0, 0%, 100%);
+  --formColor:hsl(20, 42%, 87%);
+  --whiteColor:hsl(0, 0%, 100%);
+  --blackColor:hsl(0, 0%, 18%);
+  --greyText:hsl(0, 0%, 51%);
+  --inputColor:hsl(330, 12%, 97%);
+  --cardColor:hsl(300, 3%, 94%);
+  /*Font and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.middle {
+  width: 100%;
+}
+.middle .secContainer .welCome {
+  /* padding: 2rem; */
+  border-radius: var(--borderRadius);
+  /* background: var(--primaryColorLight); */
+  justify-content: center;
+  text-align: center;
+}
+.middle .secContainer .welCome h2 {
+  font-size: var(--h1FontSize);
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  padding-top: 25px;
+  margin-top: 5px;
+}
+.middle .secContainer .welCome span {
+  justify-content: center;
+  gap: 1rem;
+  
+}
+.middle .secContainer .welCome span p {
+  font-size: var(--h3FontSize);
+  font-weight: 500;
+  color: black;
+  /* text-align: center; */
+  justify-content: center;
+  margin-top: 25px;
+  line-height: 1.5;
+  text-align: start;
+
+
+}
+
+@media screen and (min-width: 480px) {
+  .middle .secContainer .welCome {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 640px) {
+  .middle .secContainer .welCome {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .middle .secContainer .welCome p {
+    padding-left: 20px;
+    
+    
+  }
+} 
+@media screen and (min-width: 800px) {
+  .middle .secContainer .welCome {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=Middle.css.map */
